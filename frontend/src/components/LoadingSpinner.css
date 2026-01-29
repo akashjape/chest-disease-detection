@@ -1,0 +1,72 @@
+.loading-spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.spinner-content {
+  text-align: center;
+}
+
+.spinner-animation {
+  margin-bottom: 1.5rem;
+}
+
+.spinner-icon {
+  font-size: 3rem;
+  color: #3b82f6;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 0.5rem 0;
+}
+
+.spinner-subtitle {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0 0 1.5rem 0;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 200px;
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: 2px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  border-radius: 2px;
+  animation: progress 1.5s ease-in-out infinite;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
